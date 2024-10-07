@@ -1,0 +1,130 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+/* * {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+} */
+img,
+picture,
+svg,
+video {
+  /* display: block; */
+  max-width: 100%;
+}
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+
+:root {
+  --color1: #D93E30;
+  --color2: #f3caa6; 
+  --color3: #4fbdba;
+  --color4: #2eb82e;
+  --black: #000;
+  --white: #fff;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+body {
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  
+}
+.header{
+    /* background-color: var(--color2); */
+    font-size: 15px;
+    /* font-weight: bold; */
+    list-style-type: none;
+}
+.nav-item{
+    margin-right:25px ;
+    color: black;
+
+}
+.logo {
+  /* margin-right: auto; */
+  font-size: 2.5rem;
+  text-decoration: none;
+}
+.search{
+  margin-left: 30px;
+}
+.muc-san-pham{
+  justify-content: center;
+  display: flex;
+  /* margin-left:80px; */
+  align-items: center;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 50px;
+}
+.muc-san-pham .imgee{
+  margin:20px 0px 0px 0px;
+}
+.body-muc-san-pham{
+  display: flex;
+  height: 10vh;
+  position: relative;
+}
+.container-imge{
+  position: relative;
+  cursor: pointer;
+  /* overflow: hidden;  bị lỗi*/ 
+  margin-left: 30px;
+  margin-right: 10px;
+}
+.container-imge:hover .text{
+  visibility:visible;
+  width: 320px;
+  height: 165px;
+}
+.container-imge:hover .imageee{
+  /* hover cho ảnh chính */
+  transform:scale(1.1);
+  filter: brightness(50%); 
+  
+}
+.imagee{
+  width: 300px;
+  height: 165px;
+}
+.imagee .imageee{
+  transition: .5s;
+  
+}
+.text{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 165px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color:#f8f6f6;
+  /* visibility: hidden; */
+  border-radius: 20px;
+  margin-left: 20px;
+  /* transform:scale(1.2); */
+  transition: .5s;
+}
+.text h3{
+  margin-bottom: 0.7rem;
+} 
+.bx-search:hover{
+  color: #2eb82e;
+}
